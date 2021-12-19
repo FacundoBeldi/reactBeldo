@@ -4,8 +4,7 @@ function Header ({ titulo , links }) {
     return (
         <header>
             <div>
-                <img src="/logo192.png" alt="logo" />
-                <h1>{titulo}</h1>
+                <h1><img src="/logotipomod.png" alt="logo" />{titulo}</h1>
             </div>
             <Nav links={links} />  
         </header>
