@@ -1,12 +1,12 @@
-import ItemListContainer from "./ItemListContainer"
+import ItemCount from "./ItemCount"
 
 const Main = ({titulo}) => {
     return (
         <main>
             <header>
                 <h2>{titulo}</h2>
+                <ItemCount initial={0} stock={10}  greeting={"Bienvenido!"} />
             </header>
-            <ItemListContainer greeting={"Bienvenido!"}/>
         </main>
     )
 }
