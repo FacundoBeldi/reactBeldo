@@ -22,7 +22,6 @@ const resetearContador = () => {
 
 return (
     <div>
-        {greeting}
         <p>Carrito : {contador}</p>
         <button onClick={sumar}>Agregar al carrito</button>
         <button onClick={resetearContador}>Resetear</button>

@@ -1,3 +1,4 @@
+import CartWidget from "./CartWidget"
 import Nav from "./Nav"
 
 function Header ({ titulo , links }) {
@@ -6,7 +7,7 @@ function Header ({ titulo , links }) {
             <div>
                 <h1><img src="/logotipomod.png" alt="logo" />{titulo}</h1>
             </div>
-            <Nav links={links} />  
+            <Nav links={links}/>  
         </header>
     )
 }
