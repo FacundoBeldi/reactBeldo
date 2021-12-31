@@ -1,4 +1,3 @@
-import ItemCount from "./ItemCount"
 import CartWidget from "./CartWidget"
 import ItemListContainer from "./ItemListContainer"
 

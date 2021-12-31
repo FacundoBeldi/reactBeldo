@@ -1,10 +1,20 @@
 import Header from './components/Header'
 import Footer from "./components/Footer"
 import Main from './components/Main'
-import ItemCount from './components/ItemCount'
-import CartWidget from './components/CartWidget'
+import Item from './components/Item'
+import React, { useState } from 'react'
+
 
 function App() {
+
+    const[planes, setPlanes] = useState ([
+        {id: 1, nombre: 'Plan Uno', precio: 100 },
+        {id: 2, nombre: 'Plan Dos', precio: 150 },
+        {id: 3, nombre: 'Plan Tres', precio: 200 },
+        {id: 4, nombre: 'Plan Cuatro', precio: 250 },
+        {id: 5, nombre: 'Plan Cinco', precio: 300 },
+        {id: 6, nombre: 'Plan Seis', precio: 350 }
+    ])
     
     const titulo = "beldo"
     const footerData = {
@@ -20,6 +30,12 @@ function App() {
         <>
             <Header titulo={titulo}  links={array}/>
             <Main titulo={home_titulo}/>
+            <h3>Planes</h3>
+            {planes.map((planes) => (
+                <Item
+            planes={planes}
+            />
+            ))}
             <Footer data={footerData}/>
         </>
     )

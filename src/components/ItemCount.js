@@ -16,15 +16,16 @@ const restar = () => {
     }
 }
 
-const resetearContador = () => {
-    setContador(0)
+const confirmarCantidad = () => {
+    console.log(`Confirmando cantidad: ${contador}`)
+    //onAdd(contador)
 }
 
 return (
     <div>
         <p>Carrito : {contador}</p>
         <button onClick={sumar}>Agregar al carrito</button>
-        <button onClick={resetearContador}>Resetear</button>
+        <button onClick={confirmarCantidad}>Confirmar</button>
         <button onClick={restar}>Quitar del carrito</button>
     </div>
 )
