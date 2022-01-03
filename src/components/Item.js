@@ -10,7 +10,7 @@ const Item = ({ item }) => {
                 <li>{nombre}</li>
                 <li>${precio}</li>
                 <button type="button">
-                    Agregar al carrito
+                    Ver detalle
                 </button>
             </ul>
         </div>
