@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import ItemCount from "./ItemCount";
-import Item from "./Item";
 
 const ItemListContainer = ({ greeting }) => {
 
@@ -22,7 +21,6 @@ const ItemListContainer = ({ greeting }) => {
             <div>
                 <p>Cargando...</p>
                 <ItemCount initial={0} stock={8} onAdd={onAdd} />
-                <Item />
                 {greeting}
             </div>
         )
@@ -30,7 +28,6 @@ const ItemListContainer = ({ greeting }) => {
         return (
             <div>
                 <ItemCount initial={0} stock={8} onAdd={onAdd} />
-                <Item />
                 {greeting}
             </div>
         )
