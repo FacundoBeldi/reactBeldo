@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 
-const Item = ({ planes }) => {
+const Item = ({ item }) => {
 
-    const {nombre, precio, id} = planes;
+    const {nombre, precio, id} = item;
 
     return (
         <div>

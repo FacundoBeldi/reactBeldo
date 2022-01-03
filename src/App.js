@@ -31,9 +31,9 @@ function App() {
             <Header titulo={titulo}  links={array}/>
             <Main titulo={home_titulo}/>
             <h3>Planes</h3>
-            {planes.map((planes) => (
+            {planes.map((item) => (
                 <Item
-            planes={planes}
+            item={item}
             />
             ))}
             <Footer data={footerData}/>
