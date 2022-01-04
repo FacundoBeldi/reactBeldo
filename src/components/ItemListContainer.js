@@ -3,16 +3,25 @@ import ItemCount from "./ItemCount";
 
 const ItemListContainer = ({ greeting }) => {
 
-    const [productos, setProductos] = useState([])
+    const [planes, setPlanes] = useState([])
     const [loading, setLoading] = useState(true)
 
     useEffect(() => {
-        console.log("Soy un efecto")
-        setTimeout(() => {
-            console.log("Soy el timeout")
+        
+        const promesa = new Promise((res,rej)=>{
+            setTimeout(()=>{
+                console.log("Soy el timeout")
+                res(planes) 
+            },5000)
+        })
+
+        promesa.then((planes)=>{
+            console.log("Todo bien")
+            console.log(planes)
             setLoading(false)
-        }, 2000)
-    }, [])
+            setPlanes(planes)
+        })
+    },[])
 
     const onAdd = () => { }
 
