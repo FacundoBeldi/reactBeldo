@@ -1,19 +1,16 @@
-import React, { useState } from 'react'
+import { Link } from "react-router-dom"
 
-const Item = ({ item }) => {
+const Item = ({ producto }) => {
 
-    const {nombre, precio, id} = item;
+    const {title,price,image,id} = producto
 
     return (
-        <div>
-            <ul>
-                <li>{nombre}</li>
-                <li>${precio}</li>
-                <button type="button">
-                    Ver detalle
-                </button>
-            </ul>
-        </div>
+        <article>
+            <h2>{title}</h2>
+            <img src={image}/>
+            <p>${price}</p>
+            <Link to={"/item/"+id}>Ver mas</Link>
+        </article>
     )
 }
 
