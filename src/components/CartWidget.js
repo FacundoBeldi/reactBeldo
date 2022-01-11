@@ -2,7 +2,7 @@ import React from 'react'
 
 const CartWidget = () => {
     return (
-        <div>
+        <div className='Cart'>
               <span className="material-icons">
                 shopping_cart
             </span>

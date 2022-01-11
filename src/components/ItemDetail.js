@@ -1,14 +1,14 @@
 import ItemCount from "./ItemCount"
 
 const ItemDetail = ({producto}) => {
-    const {title,price,image,description} = producto
+    const {nombre,precio,image,stock} = producto
 
     return (
         <div>
-            <h2>{title}</h2>
+            <h2>{nombre}</h2>
             <img src={image}/>
-            <p>${price}</p>
-            <p>{description}</p>
+            <h3>${precio}</h3>
+            <p>{stock}</p>
             <ItemCount initial={0}/>
             <button>Confimar</button>
         </div>

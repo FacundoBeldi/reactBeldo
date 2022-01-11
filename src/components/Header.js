@@ -1,6 +1,7 @@
 import CartWidget from "./CartWidget"
 import { Link } from "react-router-dom"
 import Nav from "./Nav"
+import "../header.css"
 
 function Header ({ titulo , links }) {
     return (

@@ -2,13 +2,14 @@ import { Link } from "react-router-dom"
 
 const Item = ({ producto }) => {
 
-    const {title,price,image,id} = producto
+    const {nombre,precio,stock,image,id} = producto
 
     return (
-        <article>
-            <h2>{title}</h2>
+        <article className="Productos">
+            <h2>{nombre}</h2>
             <img src={image}/>
-            <p>${price}</p>
+            <h3>${precio}</h3>
+            <p>Stock:{stock}</p>
             <Link to={"/item/"+id}>Ver mas</Link>
         </article>
     )
