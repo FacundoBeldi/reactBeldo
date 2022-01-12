@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const ItemCount = ({greeting, stock , initial }) => {
+const ItemCount = ({greeting, stock , initial, onAdd }) => {
 
 const [ contador, setContador ] = useState(initial);
 
@@ -18,7 +18,7 @@ const restar = () => {
 
 const confirmarCantidad = () => {
     console.log(`Confirmando cantidad: ${contador}`)
-    //onAdd(contador)
+    onAdd(contador)
 }
 
 return (

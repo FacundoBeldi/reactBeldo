@@ -1,7 +1,11 @@
 import ItemCount from "./ItemCount"
 
 const ItemDetail = ({producto}) => {
-    const {nombre,precio,image,stock} = producto
+    const {nombre,precio,image,stock,id} = producto
+
+    const ejemplo = (cantidad) =>{
+        console.log(cantidad)
+    }
 
     return (
         <div>
@@ -9,7 +13,7 @@ const ItemDetail = ({producto}) => {
             <img src={image}/>
             <h3>${precio}</h3>
             <p>{stock}</p>
-            <ItemCount initial={0}/>
+            <ItemCount initial={0} onAdd={ejemplo} />
             <button>Confimar</button>
         </div>
     )

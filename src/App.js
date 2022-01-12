@@ -2,6 +2,7 @@ import Header from './components/Header'
 import Footer from "./components/Footer"
 import Main from './components/Main'
 import Item from './components/Item'
+import Form from './components/Form'
 import React, { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 

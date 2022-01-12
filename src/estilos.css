@@ -34,6 +34,7 @@ footer {
     border-radius: 8px;
     margin: 10px auto;
     justify-content: space-between;
+    background-color: aqua;
 }
 
 .Productos h2 {
